@@ -39,8 +39,8 @@ class Handler(BaseHTTPRequestHandler):
         Maneja solicitudes GET.
 
         Endpoints expuestos:
-        - "/"         → información básica del servicio
-        - "/health"   → endpoint de salud (para Docker / Kubernetes / pruebas)
+        - "/"         -> información básica del servicio
+        - "/health"   -> endpoint de salud (para Docker / Kubernetes / pruebas)
         """
         if self.path == "/" or self.path == "/":
             # Respuesta principal: identifica el servicio y marca ok=True
